@@ -1,7 +1,7 @@
 # Day 05: Collection Framework in Java
 
 The **Collection Framework** in Java is a set of classes and interfaces that help us **store and manipulate groups of objects easily**.  
-It provides **ready-made data structures** like `List`, `Set`, `Queue`, and `Map`, so we donít have to write everything from scratch.
+It provides **ready-made data structures** like `List`, `Set`, `Queue`, and `Map`, so we don‚Äôt have to write everything from scratch.
 
 ---
 
@@ -35,22 +35,11 @@ It provides **ready-made data structures** like `List`, `Set`, `Queue`, and `Map
 ---
 
 ## **Hierarchy (Easy to Remember)**
+<img width="827" height="415" alt="image" src="https://github.com/user-attachments/assets/7866de2a-59bf-44a7-a718-3c22014718e0" />
 
-Collection (Interface)
-|--- List (Interface)
-| |--- ArrayList, LinkedList, Vector, Stack
-|
-|--- Set (Interface)
-| |--- HashSet, LinkedHashSet, TreeSet
-|
-|--- Queue (Interface)
-|--- PriorityQueue, ArrayDeque
-
-Map (Interface)
-|--- HashMap, LinkedHashMap, TreeMap, Hashtable
 
 
 ## **Quick One-Liner for Interviews**
 
-> **ìCollection Framework in Java is a group of classes and interfaces that provide ready-made data structures like List, Set, Queue, and Map for storing and manipulating groups of objects efficiently.î**
+> **‚ÄúCollection Framework in Java is a group of classes and interfaces that provide ready-made data structures like List, Set, Queue, and Map for storing and manipulating groups of objects efficiently.‚Äù**
 
