@@ -24,4 +24,4 @@ String s2 = new String("Hello");
 System.out.println(s1 == s2);       // false (different memory)
 System.out.println(s1.equals(s2));  // true  (same value)
 Interview Tip
-ìUse == to check if two references point to the same object, use .equals() to check if two objects have the same value.î
+‚ÄúUse == to check if two references point to the same object, use .equals() to check if two objects have the same value.‚Äù
