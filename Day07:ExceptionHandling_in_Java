@@ -1,0 +1,70 @@
+# Day 07: Exception Handling in Java
+
+## **What is Exception Handling?**
+
+Exception handling in Java is a mechanism to **handle runtime errors** so that the normal flow of the program is **not terminated abruptly**.  
+It uses the **`try`**, **`catch`**, **`finally`**, **`throw`**, and **`throws`** keywords.
+
+---
+
+## **Types of Exceptions**
+
+### **1. Checked Exceptions (Compile-Time Exceptions)**
+- Checked at **compile-time**.
+- Must be handled using `try-catch` or declared using `throws`.
+
+**Examples:**
+- `IOException`
+- `SQLException`
+- `FileNotFoundException`
+
+---
+
+### **2. Unchecked Exceptions (Runtime Exceptions)**
+- Checked at **runtime** (compiler does not check).
+- Mostly caused by **programming logic errors**.
+
+**Examples:**
+- `NullPointerException`
+- `ArithmeticException`
+- `ArrayIndexOutOfBoundsException`
+
+---
+
+## **Example**
+
+```java
+try {
+    int num = 10 / 0; // This will throw ArithmeticException
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero!");
+} finally {
+    System.out.println("This will always run.");
+}
+
+Key Points for Interviews
+
+Checked → Compile-time, must handle.
+Unchecked → Runtime, not forced to handle.
+Exception handling improves program stability and user experience.
+
+
+#Exception Hierarchy in Java
+Throwable
+│
+├── Error (Serious problems, should not be handled by program)
+│   ├── OutOfMemoryError
+│   └── StackOverflowError
+│
+└── Exception (Can be handled)
+    │
+    ├── Checked Exceptions (Compile-time)
+    │   ├── IOException
+    │   ├── SQLException
+    │   └── FileNotFoundException
+    │
+    └── Unchecked Exceptions (Runtime)
+        ├── NullPointerException
+        ├── ArithmeticException
+        ├── ArrayIndexOutOfBoundsException
+        └── ClassCastException
