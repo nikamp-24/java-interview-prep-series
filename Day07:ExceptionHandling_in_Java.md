@@ -41,15 +41,21 @@ try {
 } finally {
     System.out.println("This will always run.");
 }
+```
 
-Key Points for Interviews
+---
 
-Checked → Compile-time, must handle.
-Unchecked → Runtime, not forced to handle.
-Exception handling improves program stability and user experience.
+## **Key Points for Interviews**
 
+- Checked → Compile-time, must handle.  
+- Unchecked → Runtime, not forced to handle.  
+- Exception handling improves program stability and user experience.
 
-#Exception Hierarchy in Java
+---
+
+## **Exception Hierarchy in Java**
+
+```text
 Throwable
 │
 ├── Error (Serious problems, should not be handled by program)
@@ -68,3 +74,4 @@ Throwable
         ├── ArithmeticException
         ├── ArrayIndexOutOfBoundsException
         └── ClassCastException
+```
